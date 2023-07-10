@@ -56,42 +56,42 @@
 
 -- Crear lista APPS = [] en settings.py del proyecto
 
-APPS = [
-    "app_solicitud"
-]
+         APPS = [\
+		"app_solicitud"\
+		]
 
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-]
+	INSTALLED_APPS = [\
+    			   'django.contrib.admin',\
+    			   'django.contrib.auth',\
+                           'django.contrib.contenttypes',\
+    			   'django.contrib.sessions',\
+    			   'django.contrib.messages',\
+    			   'django.contrib.staticfiles'\,
+			 ]
 
-INSTALLED_APPS += APPS
+	INSTALLED_APPS += APPS
 
 -- Crear la base de datos y hacer las migraciones respectivas
 
-    $ python manage.py makemigrations
-    $ python manage.py migrate
+    	$ python manage.py makemigrations
+    	$ python manage.py migrate
 
    Al generar estas migraciones podemos llegar a observar que el archivo sqlite3 tiene las tablas creadas por medio de esa migracion.
 
 
 -- Generar el usuario y logrando acceder al admin de django
 
-    $ python manage.py createsuperuser
+    	$ python manage.py createsuperuser
 
-   Username: admin
-   Email address: admin@lfj.com
-   Password: *************
+   		Username: admin\
+   		Email address: admin@lfj.com\
+   		Password: *************\
 
    Accedemos al path : http://127.0.0.1:8000/admin
 
--------------------------------------------------------
+#-------------------------------------------------------#
 
--- INTEGRACION CON EL FRONT-END
+# -- INTEGRACION CON EL FRONT-END
 
 
    Integrar las views, urls y templates, para gestionar nuestro CRUD
@@ -115,7 +115,7 @@ INSTALLED_APPS += APPS
 
             from .models import Solicitud
 
-   # Create your views here.
+ 	     //# Create your views here.
 
 
             class SolicitudBaseView(View):
@@ -151,7 +151,7 @@ INSTALLED_APPS += APPS
                     "tipo": "Borrar solicitud"
                 }
 
-   --Generar las rutas en el archivo urls.py, de tal forma que vamos a indicarle los lugares a donde estaria ingresando desde el front.
+   -- Generar las rutas en el archivo urls.py, de tal forma que vamos a indicarle los lugares a donde estaria ingresando desde el front.
 
         urls.py
 
@@ -215,7 +215,7 @@ INSTALLED_APPS += APPS
         ]
 
 
--- Creacion de una API rest utilizando django-rest-framework
+# -- Creacion de una API rest utilizando django-rest-framework
 
    -- En esta integracion, para generar una api con un modulo que se llama rest_framework, para la cual necesitamos instalar la siguiente dependecia django_rest_framework:
 
@@ -251,7 +251,7 @@ INSTALLED_APPS += APPS
 
         router = routers.SimpleRouter()
 
-   # en este caso se le anexa a la ruta de las urls de la app
+   //# en este caso se le anexa a la ruta de las urls de la app
         router.register("api-solicitud",SolicitudViewSet)
 
    -- Es importante colocar la app de rest_framework en los settings.
@@ -283,8 +283,8 @@ INSTALLED_APPS += APPS
 
    http://127.0.0.1:8000/solicitud/api-solicitud/
 
-------------------------------------------------------
+#------------------------------------------------------#
 
-REFERENCIAS
+#REFERENCIAS
 
  Clases Curso FullStack Python Codo a codo 4.0 - Profesor: Anderson Ocaña -

@@ -1,0 +1,77 @@
+input {
+   font-weight: 900;
+}
+
+textarea {
+    font-weight: 900;
+}
+
+.main-color-solicitud {
+    display: flex;
+    flex-direction: column;
+    color: gold;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.main-color-solicitud p,
+.main-color-solicitud a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 2px 2px blue;
+    
+}
+
+.main-color-solicitud a:active,
+.main-color-solicitud a:visited,
+.main-color-solicitud a:link,
+.main-color-solicitud a:focus {
+    text-decoration: none;
+    color: deeppink;
+}
+
+.main-color-solicitud > .list {
+    display: flex;
+    flex-direction: row;
+    width: 30rem;
+    margin-right: 5rem;
+    justify-content: space-between;
+    align-items: end;
+}
+
+/* p {
+    margin-left: 5rem;
+} */
+
+form input, form textarea {
+    display: flex;
+    border: 0;
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    background: white;
+    font-size: 16px;
+    border: 3px solid gold;
+}
+
+form button {
+    padding: 15px;
+    background: gold;
+    color: black;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 130px;
+    text-align-last: center;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+form button:hover {
+        
+    font-weight: bold;
+    filter: opacity(0.7);
+}

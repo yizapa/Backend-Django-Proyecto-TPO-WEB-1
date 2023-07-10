@@ -1,0 +1,63 @@
+{% extends "base_template.html" %}
+
+
+{% load static %}
+
+{% block content %}
+<!--Cabecera-->
+<head>
+    <link rel="stylesheet" href="{% static './css/autogestion.css' %}">
+</head>
+
+<!-- Contenido principal -->
+
+<p>Tenes dudas, consultas sobre nuestros paquetes o como funciona nuestra politica de soporte, completa el siguiente formulario y te contactaremos a la brevedad.</p>
+
+<section>
+
+    <img src="{% static './assets/img/checklist.png' %}">
+            
+    <form id="formulario">
+       
+        <ul class="formulario">
+            <div class="casilla">
+                <li>
+                    <label for="name">Nombre:
+                        <input type="text"  name="name" size="55" placeholder="Escribe aquí...">
+                    </label>
+                </li>
+            </div>
+            <!-- <br> -->
+            <div class="casilla">
+                <li>
+                    <label for="mail">Correo electronico:</label>
+                        <input type="email" name="mail" size="55" placeholder="Escribe aquí...">
+                    </label> 
+                </li>
+            </div>
+            <!-- <br> -->
+            <div class="casilla">
+                <li>
+                    <label for="msg">Mensaje:
+                        <textarea type="text" name="msg" rows="5" cols="55" placeholder="Escribe aquí..."></textarea>
+                    </label>
+                </li>
+            </div>
+            <!-- <br> -->
+            <div class="casilla">
+                <li class="button">
+                    <button type="submit">
+                        Enviar
+                    </button>
+                </li>
+            </div>
+        </ul>
+        
+    </form>
+    
+</section>
+
+<!-- Script -->
+<script src="{% static './assets/scripts/script.js' %}"></script>
+
+{% endblock %}

@@ -1,0 +1,119 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+        
+ }
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+    border-right: 1px solid transparent;
+}
+
+nav ul li a{
+    display: block;
+    color: gold;
+    text-decoration: solid;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+
+nav ul li a:hover:not(.active){
+    background-color: transparent;
+    opacity: 0.7;
+}
+
+.logo-container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-container img {
+    width: 200px; /* Tamaño de la imagen del logo */
+    height: auto;
+    margin-right: 10px; /* Espacio entre el logo y el título */
+    align-items: center;
+}
+
+.content{
+    background-image: url("/static/assets/img/fondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
+    text-align: center;
+    /* margin-top: 40px; */
+}
+
+p {
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+    text-shadow: 1px 1px 2px black;
+}
+
+footer{
+    position: grid;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: bottom;
+}
+
+/* Estilos para pantallas pequeñas */
+/* @media screen and (max-width: 600px) {
+    label,
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    button[type="submit"] {
+      width: 100%;
+    }
+    
+    button[type="submit"] {
+      margin-top: 10px;
+    }
+  } */
+  
+  /* Estilos para pantallas medianas y grandes */
+  /* @media screen and (min-width: 601px) {
+    .formulario {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    
+    label {
+      text-align: right;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+    }
+    
+    button[type="submit"] {
+      justify-self: center;
+    }
+  } */

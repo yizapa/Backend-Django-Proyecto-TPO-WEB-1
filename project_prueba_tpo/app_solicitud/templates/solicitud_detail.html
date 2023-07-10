@@ -1,0 +1,19 @@
+{% extends 'base_template.html' %}
+{% block content %}
+
+<main>
+    <div class="main-color-solicitud">
+        <h2>{{solicitud.mensaje}}</h2>
+        
+        {% for label, value in solicitud.get_fields %}
+        
+            <p>{{label | upper}}</p>
+
+            <p>{{value}}</p>
+        
+        {% endfor %}
+        
+        <a href="{% url 'solicitud:all' %}">ATRAS</a>
+    </div>
+</main>
+{% endblock %}

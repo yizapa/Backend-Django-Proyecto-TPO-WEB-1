@@ -1,0 +1,18 @@
+{% extends 'base_template.html' %} 
+{% block content %}
+
+
+<main>
+    <div class="main-color-solicitud">
+        <h1>Estas seguro que deseas borrar esta solicitud?</h1>
+        <h2>{{solicitud.mensaje}}</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div>{{form.as_p}}</div>
+            <input type="submit" value="{{ tipo }}" />
+        </form>
+
+        <a href="{% url 'solicitud:all' %}">Cancelar</a>
+    </div>
+</main>
+{% endblock %}

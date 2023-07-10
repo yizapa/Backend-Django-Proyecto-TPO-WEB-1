@@ -1,0 +1,41 @@
+{% extends 'base_template.html' %}
+
+{% block content %}
+
+
+<main>
+    <div class="main-color-solicitud">
+        <h1>Todas las solicitudes</h1>
+        <h2><a href="{% url 'solicitud:create' %}">CREAR SOLICITUD</a></h2>
+        {% for solicitud in solicitud_list%}
+        <div class="list">
+            <span>
+                <p>{{forloop.counter}}</p>
+            </span>
+            <span>
+                <p>{{solicitud.mensaje}}</p>
+            </span>
+            
+            <span>
+                <label for="">Detalle: </label>
+                <br>
+                <a href="{% url 'solicitud:detail' solicitud.id %}">+</a>
+            </span>
+            <span>
+                <label for="">Editar: </label>
+                <br>
+                <a href="{% url 'solicitud:update' solicitud.id %}">+</a>
+            </span>
+            <span>
+                <label for="">Borrar: </label>
+                <br>
+                <a href="{% url 'solicitud:delete' solicitud.id %}">+</a>
+            </span>
+        </div>
+        {% endfor %}
+    </div>
+    <br>
+</main>
+<br>
+
+{% endblock %}

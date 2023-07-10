@@ -1,0 +1,187 @@
+/* *{
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+ } */
+
+/* Estilos para el menú de navegación */
+/* ul {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+} */
+
+/* li {
+    float: left;
+    border-right: 1px solid transparent;
+}
+ */
+/* li a {
+    display: block;
+    color: gold;
+    text-decoration: solid;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+} */
+
+/* Cambiar el fondo del enlace cuando el mouse está encima menos Inicio */
+/* li a:hover:not(.active){
+    background-color: transparent;
+    opacity: 0.7;
+} */
+/*logo*/
+/* .logo-container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+} */
+
+/* .logo-container img {
+    width: 200px; Tamaño de la imagen del logo
+    height: auto;
+    margin-right: 10px; Espacio entre el logo y el título
+    align-items: center;
+} */
+
+/* Contenido */
+/* .content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    background-image: url("/static/assets/img/fondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+} */
+
+/* Estilos para el contenido principal */
+/* h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+} */
+
+.container {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    gap: 50px;
+    /* margin-top: 2rem; */  
+    /* margin-left: 3rem; */
+    /* margin-right: 5px; */
+    
+    margin: 0;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-right: 10px;
+    justify-content: center;
+}
+
+.corpo {
+    
+    background: transparent;
+    margin: 0;
+    margin-left: 5rem;
+    padding-left: 5rem;
+    padding: 0;
+    width: 90%;
+    height: auto;
+    max-width: 450px;
+    max-height: 650px;
+        
+}
+
+
+section div p {
+    /* display: grid; */
+    margin-right: 2rem;
+    color: white;
+    text-shadow: 1px 2px 2px gray;
+    
+    
+}
+
+section h2 {
+
+    /* display: grid; */
+    color: white;
+    text-align: left;
+    background-color: rgba(#000, 0.4);
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    /* border-radius: 30px; */
+    padding: 5px;
+    text-shadow: 1px 2px 2px gold;
+}
+
+scroll-container {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-left: .5rem;
+    overflow-x: scroll;
+    scroll-padding: 5rem; 
+}
+
+scroll-container img:not(:hover) {
+    
+    padding: 0.5px;
+    margin: 0 0 2rem 0;
+    grid: 0 0 150px;
+    width: 150px;
+    height: 150px;
+    filter: grayscale();
+    transform: skew(-1.5deg);
+    transition: all 5s ease-in-out;
+}
+
+scroll-container img:hover {
+    
+    grid: 0 0 150px;
+    width: 225px;
+    height: 225px;
+    opacity: 1;
+    transform: skew(1.5deg);
+    transition: all 2s ease-in-out;
+    width: 225px;
+    height: 225px;
+}  
+
+#scrollstyle {
+    
+    text-align: justify;
+    padding: .5rem;
+    /* margin: 1rem; */
+    /* margin-left: 2rem;
+    margin-right: 5rem; */
+    background: rgba(170, 166, 166, 0.2);
+    opacity: 0.9;
+    box-shadow: 0 3px 10px 0 rgba(#000, 0.5);
+    border-radius: 25px;
+    transform: skew(-15.5deg);
+    outline: gold;
+    outline-width: 3px;
+}
+
+/* footer{
+    
+    position: grid;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+} */

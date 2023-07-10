@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static './css/base-style.css' %}">
+        <link rel="stylesheet" href="{% static './css/main.css' %}">
+        <title>Servicios de Internet</title>
+    </head>
+    
+    <body class="content">
+        <center>
+           
+            <!-- Menú de navegación -->
+            <nav>
+                <ul>
+                    <li><a class="active" href="{% url 'index_page' %}"><img src="{% static './assets/img/comienzo.png' %}" title="Inicio"height="50px" width="50px"></a></li>
+                    <li><a href="{% url 'nosotros_page' %}"><img src="{% static './assets/img/manual.png' %}" title="Institucional"height="50px" width="50px"></a></li>
+                    <li><a href="{% url 'servicios_page' %}"><img src="{% static './assets/img/apoyo-tecnico.png' %}" title="Servicios"height="50px" width="50px"></a></li>
+                    <li><a href="{% url 'autogestion_page' %}"><img src="{% static './assets/img/charlar.png' %}" title="Autogestión"height="50px" width="50px"></a></li>
+                    <li>
+                        <a href="{% url 'solicitud:all' %}"><img src="{% static './assets/img/solicitud.png' %}" title="Solicitud"height="50px" width="50px"></a></li>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Logo -->
+            <header class="logo-container">
+                <img src="{% static './assets/img/logo5.png' %}" alt="logo_izquierda">
+
+                    <h1>{{titulo_pagina}}</h1>
+
+                <img src="{% static './assets/img/logo5.png' %}" alt="logo_derecha">
+            
+
+            </header>
+
+            
+            {% block content %}
+            {% endblock %}
+
+            <footer>
+                <strong>© 2023 Mi empresa - Todos los derechos reservados</strong>
+            </footer>
+        </center>
+    </body>
+</html>

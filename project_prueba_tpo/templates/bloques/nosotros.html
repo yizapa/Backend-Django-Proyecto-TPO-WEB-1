@@ -1,0 +1,48 @@
+{% extends "base_template.html" %}
+{% load static %}
+
+{% block content %}
+<!--Cabecera-->
+<head>
+    <link rel="stylesheet" href="{% static './css/nosotros.css' %}">
+</head>
+
+<!-- Contenido principal -->
+
+<section class="container content">
+       
+    <div>
+        <img src="{% static '/assets/img/corpo.png' %}" class="corpo">
+    </div>
+    <div>
+
+        <p>Nuestra empresa surge en los albores de la era digital, con el objetivo de proporcionar soluciones tecnológicas avanzadas y servicios de calidad en el campo de la conectividad. Desde nuestros humildes inicios, nos hemos enfocado en brindar servicios integrales que impulsen la transformación digital de nuestros clientes y les permitan aprovechar al máximo las oportunidades que ofrece internet.</p>
+
+        <p>Nuestra visión es convertirnos en el referente indiscutible en el ámbito de la tecnología asociada a internet. Buscamos liderar el camino hacia una sociedad cada vez más conectada, donde las personas, las empresas y las comunidades puedan beneficiarse plenamente de las infinitas posibilidades que brinda la era digital. Aspiramos a ser reconocidos como la empresa que marca la pauta en innovación y excelencia en servicios tecnológicos.</p>
+
+        <p>En consonancia con nuestra visión, nuestra misión es proporcionar soluciones tecnológicas de vanguardia que impulsen la productividad, la eficiencia y el crecimiento de nuestros clientes. Nos esforzamos por ofrecer servicios de internet confiables y veloces, garantizando una conectividad sin interrupciones. Buscamos superar las expectativas de nuestros clientes al brindarles un soporte técnico excepcional y soluciones a medida que satisfagan sus necesidades específicas.</p>
+
+        <p>En resumen, somos una empresa dedicada a brindar servicios de tecnología asociados a internet, comprometidos con la excelencia, la innovación y la satisfacción del cliente. Estamos firmemente arraigados en nuestros valores de calidad, confiabilidad y servicio al cliente, y nos esforzamos por ser el socio tecnológico preferido para aquellos que desean aprovechar al máximo el potencial de la era digital.</p>
+    </div>
+</section>
+
+<section>
+
+    <h2>
+      <strong>Imágenes</strong>
+    </h2>
+    <scroll-container id="scrollstyle">
+      <img src="{% static '/assets/img/imlist-img-003.jpg' %}" alt="">
+      <img src="{% static '/assets/img/imlist-img-004.jpg' %}" alt="">
+      <img src="{% static '/assets/img/imlist-img-009.jpg' %}" alt="">
+      <img src="{% static '/assets/img/imlist-img-010.jpg' %}" alt="">
+      <img src="{% static '/assets/img/imlist-img-006.jpg' %}" alt="">
+      <img src="{% static '/assets/img/imlist-img-007.jpg' %}" alt="">
+      <img src="{% static '/assets/img/imlist-img-005.jpg' %}" alt="">
+      <img src="{% static '/assets/img/imlist-img-002.jpg' %}" alt="">
+      <img src="{% static '/assets/img/imlist-img-001.jpg' %}" alt="">
+      <img src="{% static '/assets/img/imlist-img-008.jpg' %}" alt="">
+    </scroll-clontainer>
+
+  </section>
+{% endblock %}

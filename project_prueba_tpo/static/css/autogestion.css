@@ -1,0 +1,184 @@
+/* *{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+            
+}
+
+nav ul {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+        
+}
+
+nav ul li {
+    float: left;
+    border-right: 1px solid transparent;
+
+}
+
+nav ul li a {
+    display: block;
+    color: gold;
+    text-decoration: solid;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    
+} */
+
+/* Cambiar el fondo del enlace cuando el mouse está encima menos Inicio */
+/* li a:hover:not(.active){
+    background-color: transparent;
+    opacity: 0.7;
+} */
+
+/*logo*/
+/* .logo-container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+} */
+
+/* .logo-container img {
+    width: 200px; Tamaño de la imagen del logo
+    height: auto;
+    margin-right: 10px; Espacio entre el logo y el título
+    align-items: center;
+} */
+
+/* contenido */
+/* .content{
+    display: flex;
+    flex-direction: column;
+    background-image: url("/static/assets/img/fondo.jpg");
+    text-align: center;
+    justify-content: space-between;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    }
+ */
+/* Estilos para el contenido principal */
+/* h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+} */
+
+p {    
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px gold;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    margin: 0;
+    padding: 0;
+ 
+    /* gap: 5px; */
+
+}
+
+section img {
+    display: flex;
+    width: 120%;
+    max-width: 550px;
+    padding: 0;
+    object-position: top center;
+    translate: 30rem;
+    z-index: -1;
+    margin-top: -30px;
+    opacity: 0.5;
+}
+
+section form {
+    display: flex;
+    margin: auto;
+    align-items: right;
+    text-align-last: left;
+    width: 100%;
+    padding: 1px;
+}
+
+/* Estilo formulario */
+.formulario {
+    margin: 0;
+    color: white;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    list-style-type: none;
+}
+
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    background: white;
+    font-size: 16px;
+    border: 3px solid gold;
+}
+
+form button {
+    padding: 15px;
+    background: gold;
+    color: black;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 130px;
+    text-align-last: center;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+form button:hover {
+    font-weight: bold;
+    filter: opacity(0.7);
+}
+
+.casilla{
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+form div li label textarea, input[type=email], form div li label input[type=text]{
+    display: inline-flex;
+    color: white;
+    background-color: rgba(170, 166, 166, 0.3);
+    box-shadow: 0 3px 10px 0 rgba(#000, 0.1);
+    resize: none;
+}
+
+textarea:hover, input[type=email]:hover, form div li label input[type=text]:hover{
+    color: gold;
+    background-color: rgba(86, 84, 84, 0.666);
+}
+
+/* footer{
+    position: grid;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+} */

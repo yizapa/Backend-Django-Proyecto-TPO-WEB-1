@@ -1,0 +1,66 @@
+{% extends "base_template.html" %}
+{% load static %}
+
+{% block content %}
+<!--Cabecera-->
+<head>
+  <link rel="stylesheet" href="{% static './css/servicios.css' %}">
+</head>
+
+<!-- Youtube -->
+<aside>
+  <div>
+    <h2 id="vid">Busca tu video favorito en YouTube</h2>
+      <form onsubmit="buscarVideos(event)">
+        <div>
+         <input type="text" id="query" placeholder="Buscar videos en YouTube">
+         <br>
+         <button type="submit">Buscar</button>
+        </div>
+      </form>
+  </div>
+  <div id="videos"></div>
+</aside>
+
+<!-- Contenido principal -->
+
+<main>
+
+      <section id="internet">
+        <h2>Internet</h2>
+        <p>Ofrecemos servicios de internet de alta velocidad y confiabilidad. Nuestro enfoque está en proporcionar conectividad confiable para satisfacer las necesidades de nuestros clientes.</p>
+      </section>
+
+      <section id="telefonia">
+        <h2>Telefonía</h2>
+        <p>Contamos con servicios de telefonía de última generación que garantizan una comunicación clara y estable. Nuestro objetivo es brindar a nuestros clientes una experiencia excepcional en términos de calidad y fiabilidad de las llamadas.</p>
+      </section>
+    
+      <section id="television">
+        <h2>Televisión</h2>
+        <p>Disfruta de una amplia variedad de contenido televisivo con nuestro servicio de IPTV. Te ofrecemos canales nacionales e internacionales, películas, series y eventos deportivos, todo transmitido a través de nuestra red segura y confiable.</p>
+      </section>
+    
+      <section id="live_stream">
+        <h2>Live Stream</h2>
+        <p>Transmitimos eventos en vivo a través de nuestra plataforma de streaming. Ya sea un concierto, una conferencia o cualquier otro evento, puedes disfrutarlo desde la comodidad de tu hogar con una calidad de transmisión excepcional.</p>
+      </section>
+    
+      <section id="cine">
+        <h2>Servicios CINE</h2>
+        <p>Sumérgete en el mundo del cine con nuestros servicios exclusivos. Te ofrecemos una amplia selección de películas de diferentes géneros y épocas para que puedas disfrutar del mejor entretenimiento en casa.</p>
+      </section>
+    
+      <section id="web">
+        <h2>Servicios WEB</h2>
+        <p>Brindamos soluciones web personalizadas para empresas y particulares. Desde el diseño y desarrollo de sitios web hasta la implementación de aplicaciones web, nuestro equipo de expertos está listo para ayudarte a alcanzar tus objetivos en línea.</p>
+      </section>    
+  
+    
+  </main>
+
+  
+
+  <script src="{% static './assets/scripts/script.js' %}"></script>
+
+{% endblock %}

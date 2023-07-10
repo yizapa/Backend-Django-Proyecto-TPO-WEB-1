@@ -1,3 +1,5 @@
+#  Proyecto integracion fron-end y back-end con Django
+
 -- Instalar las dependencias de un archivo de texto. requeriments.txt
 
     $ pip install -r requirements.txt
@@ -89,9 +91,9 @@
 
    Accedemos al path : http://127.0.0.1:8000/admin
 
-#-------------------------------------------------------#
+------------------------------------------------------
 
-# -- INTEGRACION CON EL FRONT-END
+#  INTEGRACION CON EL FRONT-END
 
 
    Integrar las views, urls y templates, para gestionar nuestro CRUD
@@ -215,7 +217,7 @@
         ]
 
 
-# -- Creacion de una API rest utilizando django-rest-framework
+#  Creacion de una API rest utilizando django-rest-framework
 
    -- En esta integracion, para generar una api con un modulo que se llama rest_framework, para la cual necesitamos instalar la siguiente dependecia django_rest_framework:
 
@@ -283,8 +285,8 @@
 
    http://127.0.0.1:8000/solicitud/api-solicitud/
 
-#------------------------------------------------------#
+------------------------------------------------------
 
-#REFERENCIAS
+# REFERENCIAS
 
- Clases Curso FullStack Python Codo a codo 4.0 - Profesor: Anderson Ocaña -
+  Clases Curso FullStack Python Codo a codo 4.0 - Profesor: Anderson Ocaña -

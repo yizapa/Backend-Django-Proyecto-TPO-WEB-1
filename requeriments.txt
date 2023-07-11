@@ -1,5 +1,5 @@
-asgiref @ file:///work/ci_py311/asgiref_1676843199969/work
-Django @ file:///work/ci_py311/django_1676851927387/work
+asgiref
+Django
 djangorestframework==3.14.0
-pytz @ file:///work/ci_py311/pytz_1676825004346/work
-sqlparse @ file:///work/ci_py311/sqlparse_1676828845822/work
+pytz
+sqlparse

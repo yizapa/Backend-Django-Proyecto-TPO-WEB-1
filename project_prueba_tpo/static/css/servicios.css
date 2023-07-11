@@ -135,11 +135,12 @@ section p:not(#vid) {
 
 
 #vid {
+    color: gold;
     font-size: 13px;
     /* text-align: right; */
     margin: 0;
     padding: 0;
-    margin-right: 80rem;
+    margin-right: 77rem;
     margin-bottom: 0.5rem;
     /* margin-top: 5rem;
     margin-left: 2rem; */
@@ -147,12 +148,13 @@ section p:not(#vid) {
 
 form div input {
     display: inline-flex;
-    
     color: white;
+    border: 0;
     font-size: 12px;
     /* margin: 5px; */
     margin: 0;
-    margin-right: 80rem;
+    margin-right: 77rem;
+    outline: none;
     /* margin-bottom: 1rem; */
     background-color: rgba(170, 166, 166, 0.3);
     box-shadow: 0 3px 10px 0 rgba(#000, 0.1);
@@ -162,19 +164,24 @@ form div input {
 }
 
 form div button {
-    
-    color: gold;
+    color: white;
     font-size: 12px;
     /* margin-left: 2rem; */
     /* margin-bottom: 1rem; */
     margin: 2px;
-    margin-right: 80rem;
+    margin-right: 77rem;
+    border: none;
     border-radius: 25px;
-    padding: 0;
-    padding-bottom: 2px;
+    padding: 0.2rem;
+    font-weight: 500;
+    /*padding-bottom: 2px; */
     background-color: rgba(0, 0, 0, 0.666);
 }
 
+form div button:hover {
+    color: gold;
+    background-color: black;
+}
 
 #videos {
     display: grid;

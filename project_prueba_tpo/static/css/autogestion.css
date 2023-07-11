@@ -110,19 +110,23 @@ section img {
 section form {
     display: flex;
     margin: auto;
-    align-items: right;
-    text-align-last: left;
+    /* align-items: right; */
+    /* text-align-last: left; */
+    font-size: 20px;
+    font-weight: 700;
     width: 100%;
     padding: 1px;
 }
 
 /* Estilo formulario */
 .formulario {
+    display: inline-flex;
     margin: 0;
     color: white;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     max-width: 600px;
+    text-align: center;
     list-style-type: none;
 }
 
@@ -142,7 +146,6 @@ form button {
     color: black;
     font-size: 20px;
     border: 0;
-    outline: none;
     cursor: pointer;
     width: 130px;
     text-align-last: center;
@@ -153,15 +156,17 @@ form button {
 form button:hover {
     font-weight: bold;
     filter: opacity(0.7);
+    
 }
 
-.casilla{
+/* .casilla{
     display: flex;
     margin: auto;
-    width: 100%;
-}
+    width: 100%;    
+} */
 
-form div li label textarea, input[type=email], form div li label input[type=text]{
+
+form ul div li label textarea, form input[type=email], form ul div li label input[type=text]{
     display: inline-flex;
     color: white;
     background-color: rgba(170, 166, 166, 0.3);
@@ -169,10 +174,12 @@ form div li label textarea, input[type=email], form div li label input[type=text
     resize: none;
 }
 
-textarea:hover, input[type=email]:hover, form div li label input[type=text]:hover{
+form textarea:hover, form input[type=email]:hover, form div li label input[type=text]:hover{
     color: gold;
     background-color: rgba(86, 84, 84, 0.666);
 }
+
+
 
 /* footer{
     position: grid;

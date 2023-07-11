@@ -3,13 +3,14 @@
 
 <main>
     <div class="main-color-solicitud">
+        <h1>Solicitud</h1>
         <h2>{{solicitud.mensaje}}</h2>
         
         {% for label, value in solicitud.get_fields %}
         
-            <p>{{label | upper}}</p>
+            <p><u><strong>{{label | upper}}</strong></u></p>
 
-            <p>{{value}}</p>
+            <p><em>{{value}}</em></p>
         
         {% endfor %}
         

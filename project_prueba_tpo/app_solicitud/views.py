@@ -33,7 +33,7 @@ class SolicitudCreateView(SolicitudBaseView,CreateView):
 
 
 class SolicitudUpdateView(SolicitudBaseView,UpdateView):
-    template_name = "solicitud_create.html"
+    template_name = "solicitud_update.html"
     extra_context = {
         "tipo": "Actualizar solicitud"
     }

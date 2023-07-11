@@ -1,4 +1,4 @@
-#  Proyecto integracion fron-end y back-end con Django
+#  Proyecto integracion Front-end y Back-end con Django
 
 -- Instalar las dependencias de un archivo de texto. requeriments.txt
 

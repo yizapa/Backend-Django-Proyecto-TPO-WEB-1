@@ -9,7 +9,7 @@ class Solicitud(models.Model):
     mensaje = models.CharField(max_length=200)
     prioridad = models.PositiveSmallIntegerField(blank=False, null=False)
     pto = models.FloatField(blank=True, null=True)
-    hora = models.DateTimeField(auto_now_add = True, auto_now = False, blank = True)
+    creado = models.DateTimeField(auto_now_add = True, auto_now = False, blank = True)
     actualizado = models.DateTimeField(auto_now = True, blank = True)
     
     
@@ -21,7 +21,7 @@ class Solicitud(models.Model):
       db_table = "solicitud_table"
     
     def __str__(self):
-        return f"La solicitud: {self.mensaje}, Prioridad {self.prioridad}, Hora {self.hora}, Actualizada {self.actualizado}"
+        return f"La solicitud: {self.mensaje}, Prioridad {self.prioridad}, Hora {self.creado}, Actualizada {self.actualizado}"
 
     def get_fields(self):
         return [
